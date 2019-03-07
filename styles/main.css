@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(224, 224, 224);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body{
+    background: #100e15;
+    background-image: url('../images/dot-pattern.png');
+    background-repeat: repeat;
+}
