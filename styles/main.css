@@ -16,7 +16,6 @@ body {
     background: #100e15;
     background-image: url('../images/dot-pattern.png');
     background-repeat: repeat;
-    overflow: hidden;
 }
 
 a {
@@ -30,7 +29,6 @@ a {
     opacity: 0;
     grid-template-areas: 'sidebar content';
     grid-template-columns: auto 1fr;
-    height: 100%;
     max-width: 980px;
     margin: 0 auto;
     padding: 2em 0;
