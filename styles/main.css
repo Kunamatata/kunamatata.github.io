@@ -64,72 +64,91 @@ a {
     padding: 1em;
 }
 
-.content h2{
+.content h2 {
     margin: 0;
 }
 
-.content h2::after{
-    content:'';
+.content h2::after {
+    content: '';
     display: block;
-    transform: translateY(.75em);
+    transform: translateY(1em);
     height: 2px;
     background: red;
     border-radius: 2;
     background-position: 0 0;
-    background: linear-gradient(90deg,#b294ff,#57e6e6,#feffb8,#57e6e6,#b294ff,#57e6e6);
+    background: linear-gradient(90deg, #b294ff, #57e6e6, #feffb8, #57e6e6, #b294ff, #57e6e6);
     background-size: 500% auto;
     animation: gradient 3s linear infinite;
 }
 
-.projects{
+.projects {
+    margin-top: 3em;
+}
+
+.projects-grid {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-top: 2em;
 }
 
-.projects .project{
+.projects-grid .project {
     padding: 1em;
-    border-radius: 2px;
-    background-color:rgba(255,255,255,0.02);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: background-color .2s ease-in-out;
     animation: .4s slidein linear forwards;
 }
 
-.projects .project:nth-child(even){
+.projects-grid .project:nth-child(2n) {
     animation: .5s slidein linear forwards;
 }
 
-.project .title{
+.projects-grid .project:nth-child(3n) {
+    animation: .7s slidein linear forwards;
+}
+
+.projects-grid .project:nth-child(4n) {
+    animation: .9s slidein linear forwards;
+}
+
+.project .title {
     text-align: center;
 }
 
-@media (max-width: 480px){
-    html{
+.project:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color .2s ease-in-out;
+}
+
+.github-link {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url(../images/github-logo.png);
+    background-size: contain;
+}
+
+@media (max-width: 480px) {
+    html {
         font-size: .8em;
     }
-    .headshot{
+    .headshot {
         display: none;
     }
-
-    #container{
-        grid-template-areas: 
-        'sidebar'
-        'content';
+    #container {
+        grid-template-areas: 'sidebar' 'content';
         grid-template-rows: 50px 1fr;
     }
-
-    .sidebar{
+    .sidebar {
         width: 100%;
         padding: 0 1em;
     }
-
     .profile-links ul {
         display: flex;
         justify-content: space-between;
     }
-    
-    .projects {
+    .projects-grid {
         grid-template-columns: auto;
     }
 }

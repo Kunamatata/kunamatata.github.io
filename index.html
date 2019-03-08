@@ -16,7 +16,6 @@
             <div class="headshot"></div>
             <div class="profile-links">
                 <ul>
-                    <li><a href="https://twitter.com/TheKunamatata">Twitter</a></li>
                     <li><a href="https://github.com/Kunamatata">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/maxime-caly-502b3b58/">LinkedIn</a></li>
                     <li><a href="https://starcraft2.com/en-us/profile/1/1/2501407/ladders?ladderId=summary">Starcraft Profile</a> </li>
@@ -25,19 +24,32 @@
         </div>
         <div class="content">
             <h2>Hi, I'm Max. I'm a Software Engineer with a Master's in Computer Science and a lot of fun personal projects 😃</h2>
+
             <div class="projects">
-                <div class="project" data-name="sc2-chrome-ext">
-                    <span class="title"><h3><a href="https://chrome.google.com/webstore/detail/starcraft-2-streams/jjpjdjapkaohmfginkklmapiijnmneeo">Starcraft 2 Chrome Extension</a></h3></span>
-                    <div class="description">
-                        <p>I developed a Chrome Extension to view Starcraft 2 live streams from Twitch. Users can choose to be notified when their favorite streamers go live!</p>
-                        <p> It interacts with my back-end REST API written in NodeJS which caches Twitch live streams & more.</p>
+                <h3>My Projects</h3>
+                <div class="projects-grid">
+                    <div class="project" data-name="sc2-chrome-ext">
+                        <span class="title"><h3><a href="https://chrome.google.com/webstore/detail/starcraft-2-streams/jjpjdjapkaohmfginkklmapiijnmneeo">Starcraft 2 Chrome Extension</a></h3></span>
+                        <div class="description">
+                            <p>I developed a Chrome Extension to view Starcraft 2 live streams from Twitch. Users can choose to be notified when their favorite streamers go live!</p>
+                            <p> It interacts with my back-end REST API written in NodeJS which caches Twitch live streams & more.</p>
+                        </div>
+                        <a class="github-link" href="https://github.com/Kunamatata/Starcraft2ChromeExtension"></a>
                     </div>
-                </div>
-                <div class="project" data-name="sc2-ext-server">
-                    <span class="title"><h3><a href="http://bewareofcat.asuscomm.com:3000/">Starcraft 2 Extension Server</a></h3></span>
-                    <div class="description">
-                        <p>The server caches the results of the Twitch API and the Battle.net Starcraft API through OAuth 2.0.</p>
-                        <p>This server exposes REST API endpoints which are consumed by the chrome extension and other websites.</p>
+                    <div class="project" data-name="sc2-ext-server">
+                        <span class="title"><h3><a href="http://bewareofcat.asuscomm.com:3000/">Starcraft 2 Extension Server</a></h3></span>
+                        <div class="description">
+                            <p>The server caches the results of the Twitch API and the Battle.net Starcraft API through OAuth 2.0.</p>
+                            <p>This server exposes REST API endpoints which are consumed by the chrome extension and other websites.</p>
+                        </div>
+                        <a class="github-link" href="https://github.com/Kunamatata/Starcraft2-Extension-Server"></a>
+                    </div>
+                    <div class="project" data-name="rpi-watering-system">
+                        <span class="title"><h3><a href="">Raspberry PI Outdoor Watering System</a></h3></span>
+                        <div class="description">
+                            <p>This project contains both the front-end and the backend code</p>
+                            <p>It allows us to water our front and backyard through a dashboard, either on a computer or a smartphone. We can also configure Cron jobs to automate the watering at specific times.</p>
+                        </div>
                     </div>
                 </div>
             </div>
