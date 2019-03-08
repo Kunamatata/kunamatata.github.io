@@ -16,25 +16,31 @@ body {
     background: #100e15;
     background-image: url('../images/dot-pattern.png');
     background-repeat: repeat;
+    overflow: hidden;
 }
 
-a{
+a {
     text-decoration: none;
-    color:#09aaf5;
+    color: #09aaf5;
 }
 
 #container {
     display: grid;
+    position: relative;
+    opacity: 0;
+    grid-template-areas: 'sidebar content';
     grid-template-columns: auto 1fr;
     height: 100%;
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2em 0;
+    animation: .5s slidein ease-in-out forwards;
 }
 
 .sidebar {
+    grid-area: sidebar;
     justify-self: center;
-    padding: 1rem;
+    padding: 1em;
 }
 
 .headshot {
@@ -51,10 +57,67 @@ a{
 }
 
 .profile-links ul li {
-    padding: .5rem 0;
+    padding: .5em 0;
     font-weight: bold;
 }
 
-.content{
-    padding: 1rem;
+.content {
+    grid-area: content;
+    padding: 1em;
+}
+
+.content h2::after{
+    content:'';
+    display: block;
+    transform: translateY(.5em);
+    height: 2px;
+    background: red;
+    border-radius: 2;
+    background-position: 0 0;
+    background: linear-gradient(90deg,#b294ff,#57e6e6,#feffb8,#57e6e6,#b294ff,#57e6e6);
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: .8em;
+    }
+    .headshot{
+        display: none;
+    }
+
+    #container{
+        grid-template-areas: 
+        'sidebar'
+        'content';
+        grid-template-rows: 50px 1fr;
+    }
+
+    .sidebar{
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .profile-links ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient {
+    to {
+        background-position: 100%;
+    }
 }
