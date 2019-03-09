@@ -97,19 +97,19 @@ a {
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.02);
     transition: background-color .2s ease-in-out;
-    animation: .4s slidein linear forwards;
+    animation: .4s slidein ease-in-out forwards;
 }
 
 .projects-grid .project:nth-child(2n) {
-    animation: .5s slidein linear forwards;
+    animation: .5s slidein ease-in-out forwards;
 }
 
 .projects-grid .project:nth-child(3n) {
-    animation: .7s slidein linear forwards;
+    animation: .6s slidein ease-in-out forwards;
 }
 
 .projects-grid .project:nth-child(4n) {
-    animation: .9s slidein linear forwards;
+    animation: .8s slidein ease-in-out forwards;
 }
 
 .project .title {
