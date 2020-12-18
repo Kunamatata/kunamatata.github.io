@@ -122,6 +122,10 @@ a {
   animation: 0.8s slidein ease-in-out forwards;
 }
 
+.projects-grid .project:nth-child(5n) {
+    animation: 1s slidein ease-in-out forwards;
+  }
+
 .project .title {
   text-align: center;
 }
