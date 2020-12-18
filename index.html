@@ -36,11 +36,44 @@
             <div class="projects">
                 <h3>My Projects</h3>
                 <div class="projects-grid">
+                    <div class="project" data-name="in-stock-notifications">
+                        <span class="title"><h3><a href="">In Stock Notifier</a></h3></span>
+                        <div class="description">
+                            <p>I am currently working on a small project to notify people when items are back in stock.</p>
+                            <p>Among many of the different parts, it uses goroutines run tasks concurrently.</p>
+                            <p>It integrates with Discord to send messages to channels and also integrates with text messaging via carrier gateways.</p>
+                            <strong>Technologies Used:</strong>
+                            <ul>
+                                <li>Golang</li>
+                                <li>Hosted in GCP f1-micro</li>
+                                <li>Phone Carrier SMS Gateway</li>
+                                <li>Discord Integration (discordgo)</li>
+                            </ul>
+                        </div>
+                        <div class="project-status">
+                            <p>Status: <span class="online">Online</span></p>
+                        </div>
+                        <a class="github-link" href=""></a>
+                    </div>
+                    <div class="project" data-name="rpi-watering-system">
+                        <span class="title"><h3><a href="https://github.com/Kunamatata/RaspberryPi-Watering-System">Raspberry PI Outdoor Watering System</a></h3></span>
+                        <div class="description">
+                            <p>This project contains both the front-end and the backend code</p>
+                            <p>It allows us to water our front and backyard through a dashboard, either on a computer or a smartphone. We can also configure Cron jobs to automate the watering at specific times.</p>
+                        </div>
+                        <div class="project-status">
+                            <p>Status: <span class="online">Online Local Network</span></p>
+                        </div>
+                        <a class="github-link" href="https://github.com/Kunamatata/RaspberryPi-Watering-System"></a>
+                    </div>
                     <div class="project" data-name="sc2-chrome-ext">
                         <span class="title"><h3><a href="https://chrome.google.com/webstore/detail/starcraft-2-streams/jjpjdjapkaohmfginkklmapiijnmneeo">Starcraft 2 Chrome Extension</a></h3></span>
                         <div class="description">
                             <p>I developed a Chrome Extension to view Starcraft 2 live streams from Twitch. Users can choose to be notified when their favorite streamers go live!</p>
                             <p> It interacts with my back-end REST API written in NodeJS which caches Twitch live streams & more.</p>
+                        </div>
+                        <div class="project-status">
+                            <p>Status: <span class="offline">Offline</span></p>
                         </div>
                         <a class="github-link" href="https://github.com/Kunamatata/Starcraft2ChromeExtension"></a>
                     </div>
@@ -50,21 +83,19 @@
                             <p>The server caches the results of the Twitch API and the Battle.net Starcraft API through OAuth 2.0.</p>
                             <p>This server exposes REST API endpoints which are consumed by the chrome extension and other websites.</p>
                         </div>
+                        <div class="project-status">
+                            <p>Status: <span class="offline">Offline</span></p>
+                        </div>
                         <a class="github-link" href="https://github.com/Kunamatata/Starcraft2-Extension-Server"></a>
                     </div>
-                    <div class="project" data-name="rpi-watering-system">
-                        <span class="title"><h3><a href="https://github.com/Kunamatata/RaspberryPi-Watering-System">Raspberry PI Outdoor Watering System</a></h3></span>
-                        <div class="description">
-                            <p>This project contains both the front-end and the backend code</p>
-                            <p>It allows us to water our front and backyard through a dashboard, either on a computer or a smartphone. We can also configure Cron jobs to automate the watering at specific times.</p>
-                        </div>
-                        <a class="github-link" href="https://github.com/Kunamatata/RaspberryPi-Watering-System"></a>
-                    </div>
-                    <div class="project" data-name="discod-bot-expriment">
+                    <div class="project" data-name="discord-bot-expriment">
                         <span class="title"><h3><a href="https://github.com/Kunamatata/shelter-bot">Discord Bot</a></h3></span>
                         <div class="description">
                             <p>I experimented in making my own Discord bot with Discord.js</p>
                             <p>I initially wanted to create a fun bot to post gifs when the users sent a command. The bot integrates battle.net for World of Warcraft stats. It responds to a variety of commands sent by users.</p>
+                        </div>
+                        <div class="project-status">
+                            <p>Status: <span class="offline">Offline</span></p>
                         </div>
                         <a class="github-link" href="https://github.com/Kunamatata/shelter-bot"></a>
                     </div>
