@@ -31,7 +31,7 @@ a {
   grid-template-columns: auto 1fr;
   max-width: 980px;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 4em 0;
   animation: 0.5s slidein ease-in-out forwards;
 }
 
@@ -68,7 +68,7 @@ a {
   margin: 0;
 }
 
-.content h2::after {
+header::after {
   content: "";
   display: block;
   transform: translateY(1em);
@@ -162,6 +162,14 @@ a {
   background-image: url(../images/github-logo.png);
   background-size: contain;
   align-self: end;
+}
+
+.no-mt {
+  margin-top: 0;
+}
+
+h4 {
+  font-weight: 500;
 }
 
 @media (max-width: 480px) {
